@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+22th January, 2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project Github Simulation.
 
 ### Description
-Describe what your project is about and what it does
-
+In this project, I simulate version control system called git on a bikeshare project I completed earlier. 
+In the bikeshare project, I use data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. 
+I also compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 ### Files used
-Include the files used
-
+bikeshare.py
+chicago.csv
+ney_york_city.csv
+washington.csv
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
