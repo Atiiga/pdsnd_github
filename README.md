@@ -2,7 +2,7 @@
 22th January, 2020
 
 ### Project Title
-Bikeshare Project Github Simulation.
+Udacity Bikeshare Project Github Simulation.
 
 ### Description
 In this project, I simulate version control system called git on a bikeshare project I completed earlier. 
