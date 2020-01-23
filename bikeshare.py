@@ -27,6 +27,7 @@ def get_filters():
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Which city will you like to explore;\n Chicago, New York or Washington? \n> ').lower()
+    # City input validation
     while city not in CITIES:
         city = input('You entered a wrong city, Please make sure your city is either \n Chicago,'\
                      ' New york or Washimgton. Also make sure your spelling is correct. \n>').lower()
@@ -34,6 +35,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     month  = input('Which month will you like to explore? or enter \'all\' for all months'\
                   '\n(e.g. all, january, february, march, april, may, june) \n> ').lower()
+    # month input validation
     while month not in MONTHS and month != 'all':
         month  = input('You entered a wrong month, Please make sure your month is either \n'\
                        ' january, february, march, april, may, june or enter \'all\' for all months. \n>').lower()
@@ -41,6 +43,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('Please enter the day you want to analyze?'\
                 ' or enter \'all\' for all days. \n(e.g. all, monday, sunday) \n> ')
+    # day input validation
     while day not in DAYS and day !='all':
         day  = input('You entered a wrong day, Please make sure your day is either \n'\
                     ' Monday, Teusday, Wednesday, Thursday, Friday or enter \'all\' for all days. \n>').lower()  
