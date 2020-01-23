@@ -234,7 +234,7 @@ def display_data(df):
     # iterate from 0 to the number of rows in steps of 5
     for i in range(0, row_length, 5):
         
-        yes = input('\nWould you like to examine the particular user trip data? Type \'yes\' or \'no\'\n> ')
+        yes = input('\nWill you like to see the raw data? Enter Yes to continue/ No to stop \n> ')
         if yes.lower() != 'yes':
             break
         
@@ -260,7 +260,7 @@ def main():
 
         display_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter Yes to continue/ No to stop\n')
         if restart.lower() != 'yes':
             break
 
