@@ -26,23 +26,25 @@ def get_filters():
     print('Hello! You are welcome!\n Let\'s explore some statistics from a US bikeshare data!')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    while True:
-       city = input('Which city will you like to explore;\n Chicago, New York or Washington? \n> ').lower()
-       if city in CITIES:
-           break
+    city = input('Which city will you like to explore;\n Chicago, New York or Washington? \n> ').lower()
+    while city not in CITIES:
+        city = input('You entered a wrong city, Please make sure your city is either \n Chicago,'\
+                     ' New york or Washimgton. Also make sure your spelling is correct. \n>').lower()
 
     # get user input for month (all, january, february, ... , june)
-    while True:
-      month  = input('Which month will you like to explore? or enter \'all\' for all months'\
+    month  = input('Which month will you like to explore? or enter \'all\' for all months'\
                   '\n(e.g. all, january, february, march, april, may, june) \n> ').lower()
-      if month in MONTHS or month == 'all':
-           break
+    while month not in MONTHS and month != 'all':
+        month  = input('You entered a wrong month, Please make sure your month is either \n'\
+                       ' january, february, march, april, may, june or enter \'all\' for all months. \n>').lower()
+
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    while True:
-      day = input('Please enter the day you want to analyze?'\
-                   ' or enter \'all\' for all days. \n(e.g. all, monday, sunday) \n> ')
-      if day in DAYS or day == 'all':
-            break
+    day = input('Please enter the day you want to analyze?'\
+                ' or enter \'all\' for all days. \n(e.g. all, monday, sunday) \n> ')
+    while day not in DAYS and day !='all':
+        day  = input('You entered a wrong day, Please make sure your day is either \n'\
+                    ' Monday, Teusday, Wednesday, Thursday, Friday or enter \'all\' for all days. \n>').lower()  
+ 
 
     print('-'*40)
     return city, month, day
